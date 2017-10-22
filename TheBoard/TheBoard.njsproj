@@ -31,6 +31,7 @@
   <ItemGroup>
     <Compile Include="controllers\homeController.js" />
     <Compile Include="controllers\index.js" />
+    <Compile Include="data\database.js" />
     <Compile Include="data\index.js" />
     <Compile Include="data\seedData.js" />
     <Compile Include="gruntfile.js" />
@@ -39,6 +40,7 @@
     <Content Include="package.json" />
     <Content Include="public\css\site.css" />
     <Content Include="README.md" />
+    <Content Include="startupMongoDB.bat" />
     <Content Include="views\ejs\index.ejs" />
     <Content Include="views\ejs\layout.ejs" />
     <Content Include="views\index.vash" />
@@ -51,8 +53,10 @@
     <Folder Include="data\" />
     <Folder Include="public\" />
     <Folder Include="public\css\" />
+    <Folder Include="typings\modules\body-parser\" />
     <Folder Include="typings\modules\ejs-locals\" />
     <Folder Include="typings\modules\ejs\" />
+    <Folder Include="typings\modules\mongodb\" />
     <Folder Include="views\" />
     <Folder Include="typings\" />
     <Folder Include="typings\globals\" />
@@ -66,10 +70,12 @@
   <ItemGroup>
     <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
     <TypeScriptCompile Include="typings\index.d.ts" />
+    <TypeScriptCompile Include="typings\modules\body-parser\index.d.ts" />
     <TypeScriptCompile Include="typings\modules\ejs-locals\index.d.ts" />
     <TypeScriptCompile Include="typings\modules\ejs\index.d.ts" />
     <TypeScriptCompile Include="typings\modules\express\index.d.ts" />
     <TypeScriptCompile Include="typings\modules\jade\index.d.ts" />
+    <TypeScriptCompile Include="typings\modules\mongodb\index.d.ts" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
