@@ -1,1 +1,2 @@
 C:\Users\jonathan\Desktop\NodeJs\TheBoard\TheBoard\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Users\jonathan\Desktop\NodeJs\TheBoard\TheBoard\obj\Debug\TheBoard.njsprojResolveAssemblyReference.cache

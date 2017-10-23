@@ -54,6 +54,7 @@
     <Folder Include="public\" />
     <Folder Include="public\css\" />
     <Folder Include="typings\modules\body-parser\" />
+    <Folder Include="typings\modules\cookie-parser\" />
     <Folder Include="typings\modules\ejs-locals\" />
     <Folder Include="typings\modules\ejs\" />
     <Folder Include="typings\modules\mongodb\" />
@@ -71,6 +72,7 @@
     <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
     <TypeScriptCompile Include="typings\index.d.ts" />
     <TypeScriptCompile Include="typings\modules\body-parser\index.d.ts" />
+    <TypeScriptCompile Include="typings\modules\cookie-parser\index.d.ts" />
     <TypeScriptCompile Include="typings\modules\ejs-locals\index.d.ts" />
     <TypeScriptCompile Include="typings\modules\ejs\index.d.ts" />
     <TypeScriptCompile Include="typings\modules\express\index.d.ts" />

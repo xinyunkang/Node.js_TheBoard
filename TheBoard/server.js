@@ -3,13 +3,15 @@ var express = require("express");
 var app = express();
 //var ejsEngine = require("ejs-locals");
 var controllers = require("./controllers");
-
+//var flash = require("connect-flash");
 // Setup the View Engine
 //app.set("view engine", "jade");
 //app.engine("ejs", ejsEngine); // support master pages
 //app.set("view engine", "ejs"); // ejs view engine
 app.set("view engine", "vash");
-
+//app.use(express.cookieParser());
+//app.use(express.session({ secret: "encrypted data bla bla bla" }));
+//app.use(flash());
 //Opt into Services
 app.use(express.urlencoded({ extended: true })); //handle form-encoded data and attach that to the body.
 

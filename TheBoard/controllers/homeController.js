@@ -13,25 +13,25 @@
                     title: "The Board",
                     error: err,
                     categories: results,
-                   // newCatError: req.flash("newCatName")
+                   // newCatError: req.flash("newCatName")  //get the error
                 });
 
             });
         });
 
-        //app.post("/newCategory", function (req, res) {
-        //    var categoryName = req.body.categoryName;
-        //    //data.createNewCategory(categoryName, function (err) {
-        //    //    if (err) {
-        //    //        // Handle Error
-        //    //        console.log(err);
-        //    //        req.flash("newCatName", err);
-        //    //        res.redirect("/");
-        //    //    } else {
-        //    //        res.redirect("/notes/" + categoryName);
-        //    //    }
-        //    //});
-        //});
+        app.post("/newCategory", function (req, res) {
+            var categoryName = req.body.categoryName;
+            data.createNewCategory(categoryName, function (err) {
+                if (err) {
+                    // Handle Error
+                    console.log(err);
+                    //req.flash("newCatName", err);  //set the error
+                    res.redirect("/");
+                } else {
+                    res.redirect("/notes/" + categoryName);
+                }
+            });
+        });
 
     };
 
