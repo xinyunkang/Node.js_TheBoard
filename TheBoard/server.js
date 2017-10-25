@@ -9,6 +9,7 @@ var controllers = require("./controllers");
 //app.engine("ejs", ejsEngine); // support master pages
 //app.set("view engine", "ejs"); // ejs view engine
 app.set("view engine", "vash");
+app.use(express.json());
 //app.use(express.cookieParser());
 //app.use(express.session({ secret: "encrypted data bla bla bla" }));
 //app.use(flash());
